@@ -3,6 +3,8 @@
   --dark: #363636;
   --main: #0078aa;
   --bl: #000;
+  --abt: #e9fffd;
+  --card: #47c9e5;
 }
 *, *::after, *::before{
   box-sizing: border-box;
@@ -16,6 +18,9 @@ body {
   margin: 0;
   background-color: var(--wht);
   width: 100%;
+}
+button{
+  font-family: 'Montserrat', sans-serif;
 }
 p,h1,h2,h3,h4,h5,h6{
   margin: 0;
@@ -31,6 +36,9 @@ ul{
 .white_icon{
   filter: invert(100%) sepia(100%) saturate(13%) hue-rotate(211deg) brightness(105%) contrast(100%);
   margin: 10px;
+}
+.main_icon{
+  filter: invert(33%) sepia(61%) saturate(1597%) hue-rotate(168deg) brightness(92%) contrast(101%);
 }
 .small_icon{
   margin: 20px;
@@ -61,10 +69,14 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--wht);
+  z-index: 2;
 }
 .navigation img{
   max-width: 10%;
-  margin: 15px 0 10px 0;
+  margin: 5px 0 10px 0;
 }
 nav ul{
   display: flex;
@@ -80,13 +92,12 @@ nav a{
   background-image: url(../img/lady.jpg);
   background-position: 40%;
   background-repeat: no-repeat;
-  /* background-size: 100% 100%; */
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 .header h1{
-  margin: 30% 20% 5% 20%;
+  margin: 25% 20% 5% 20%;
 }
 .header p{
   font-size: 0.6rem;
@@ -97,4 +108,111 @@ nav a{
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 4%;
+}
+.about{
+  text-align: center;
+
+  /* додав, щоб на тф сильно не тягнуло, можна і прибрати!*/
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 10%;
+}
+.about img{
+  margin-top: 25px;
+  width: 100%;
+}
+.section_h2{
+  font-size: 1.3rem;
+  margin-bottom: 1.7%;
+}
+.section_special_p{
+  font-size: 0.6rem;
+  margin-bottom: 6%;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.about p:first-of-type {
+  color: var(--main);
+}
+.about span{
+  color: var(--main);
+  margin-right: 7px;
+}
+.about h3{
+  font-size: 0.65rem;
+  font-weight: 900;
+  margin-bottom: 1.7%;
+}
+.about p{
+  font-size: 0.7rem;
+  /* margin-bottom: 4%; */
+  margin: 0 4% 4% 4%;
+}
+.services{
+  background-color: var(--abt);
+  padding: 7% 4% 1% 4%;
+  text-align: center;
+}
+.services_article{
+  background-color: var(--wht);
+  text-align: left;
+  padding: 8%;
+  margin-bottom: 7%;
+}
+.services_article h3{
+  font-size: 0.65rem;
+  margin-bottom: 3%;
+}
+.services_article p{
+  font-size: 0.55rem;
+}
+.prices{
+  text-align: center;
+  padding: 4%;
+}
+.prices h2{
+  margin: 0;
+}
+.card{
+  background-color: var(--card);
+  color: var(--wht);
+  padding: 10% 0 7% 0;
+  margin-bottom: 4%;
+}
+.card h3{
+  margin-bottom: 4%;
+  font-size: 0.9rem;
+}
+.card p:first-of-type{
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2%;
+}
+.card p:nth-of-type(2){
+  font-style: italic;
+  font-size: 0.6rem;
+  margin-bottom: 6%;
+}
+.card p{
+  font-size: 0.45rem;
+  margin-bottom: 5%;
+}
+.prices img{
+  width: 3%;
+  margin: 0 0 5% 0;
+}
+.card button{
+  color: var(--main);
+  font-weight: 700;
+  padding: 10px 15px;
+  background-color: var(--wht);
+  border: 2px solid var(--main);
+  border-radius: 14%;
+}
+.card_2{
+  background-color: var(--wht);
+  color: var(--main);
+  padding: 10% 0 7% 0;
+  margin-bottom: 4%;
+  border: 2px solid var(--main);
 }
