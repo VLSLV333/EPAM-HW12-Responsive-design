@@ -1,11 +1,100 @@
-/*
-* Colors used in design.
-*   primary: #0078aa;
-*   dark: #363636;
-*   light: #fff;
-*/
-
+:root{
+  --wht: #fff;
+  --dark: #363636;
+  --main: #0078aa;
+  --bl: #000;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  font-size: 24px;
+}
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: var(--wht);
+  width: 100%;
 }
-
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+a{
+text-decoration: none;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.white_icon{
+  filter: invert(100%) sepia(100%) saturate(13%) hue-rotate(211deg) brightness(105%) contrast(100%);
+  margin: 10px;
+}
+.small_icon{
+  margin: 20px;
+}
+.fixedButton{
+  position: fixed;
+  bottom: 0px;
+  right: 0px; 
+  padding: 20px;
+}
+.roundedFixedBtn{
+height: 50px;
+width: 50px; 
+border-radius: 50%;
+background-color: var(--main);
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.icons_container{
+  background-color: var(--main);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.navigation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation img{
+  max-width: 10%;
+  margin: 15px 0 10px 0;
+}
+nav ul{
+  display: flex;
+  gap: 10px;
+  margin: 0 0 15px 0;
+}
+nav a{
+  color: var(--dark);
+  font-size: clamp(0.6rem, 3vw, 3rem);
+  font-weight: 600;
+}
+.header{
+  background-image: url(../img/lady.jpg);
+  background-position: 40%;
+  background-repeat: no-repeat;
+  /* background-size: 100% 100%; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.header h1{
+  margin: 30% 20% 5% 20%;
+}
+.header p{
+  font-size: 0.6rem;
+  color: rgb(138, 138, 138);
+  margin: 0 2% 4% 2%;
+}
+.icons_header{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 4%;
+}
