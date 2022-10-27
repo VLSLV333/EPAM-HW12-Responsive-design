@@ -365,5 +365,47 @@ footer{
   .prices .section_special_p{
     margin-bottom: 2.5%;
   }
-  
+  .contact{
+    padding: 0;
+    display: flex;
+    margin: 8% 0 0 0;
+    text-align: left;
+  }
+  .contact_img{
+    max-width: 45%;
+    flex-grow: 1;
+  }
+  .contact img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: 10% 0;
+  }
+  .contact_text{
+    flex-grow: 1;
+    padding: 0 2% 7% 4%;
+  }
+  .contact h2{
+    margin: 0 7% 1.5% 0;
+  }
+  .contact p{
+    margin: 0 0 7% 0;
+  }
+  .contact form{
+    margin: 0;
+  }
+  .contact_text input:nth-of-type(4){
+    border-bottom: 1px solid rgb(231, 231, 231);
+  }
+  .contact_text input:nth-of-type(5){
+    border: none;
+  }
+  .contact input[type="date"]::-webkit-inner-spin-button,
+  .contact input[type="date"]::-webkit-calendar-picker-indicator {
+      display: none;
+  }
+  footer{
+    padding: 2.5%;
+    font-size: 0.6rem;
+  }
 }
