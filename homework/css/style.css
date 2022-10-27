@@ -267,7 +267,6 @@ footer{
   }
   nav a{
     color: var(--dark);
-    /* font-size: 0.6rem; */
     font-size: clamp(0.5rem, 1.8vw, 2rem);
     font-weight: 600;
   }
@@ -321,7 +320,7 @@ footer{
     font-size: 0.58rem;
   }
   .section_special_p{
-    font-size: 0.5rem;
+    font-size: 0.55rem;
   }
   .services_article{
     padding: 4% 3%;
@@ -343,4 +342,28 @@ footer{
   .articles > article{
     flex-basis: 30%;
   }
+  .prices{
+  background-image: url(../img/pricing_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 90%;
+  padding: 5.5% 1.5% 0 2.5%;
+  }
+  .prices_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card{
+    margin: 0;
+    width: 33%;
+    padding: 6% 0;
+  }
+  .card_2{
+    padding: 10% 0 7% 0;
+  }
+  .prices .section_special_p{
+    margin-bottom: 2.5%;
+  }
+  
 }
