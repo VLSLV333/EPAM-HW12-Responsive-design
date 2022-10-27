@@ -75,10 +75,13 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.max_size{
+  background-color: var(--wht);
+  width: 100%;
   position: sticky;
   top: 0;
-  background-color: var(--wht);
-  z-index: 2;
+  z-index: 3;
 }
 .navigation img{
   margin-top: 35%;
@@ -90,7 +93,7 @@ nav ul{
 }
 nav a{
   color: var(--dark);
-  font-size: clamp(0.6rem, 3vw, 3rem);
+  font-size: clamp(0.55rem, 2.5vw, 2.5rem);
   font-weight: 600;
 }
 .header{
@@ -275,7 +278,7 @@ footer{
     background-position: 42%;
     background-repeat: no-repeat;
     text-align: left;
-    padding: 30% 2%;
+    padding: 25% 2% 12% 2%;
   }
   .header h1{
     margin: 0 25% 3% 0;
@@ -292,7 +295,7 @@ footer{
   }
   .about{
     display: flex;
-    margin: 8% 2.5% 8% 0;
+    margin: 6% 2.5% 8% 0;
     text-align: left;
     gap: 3.5%;
   }
@@ -407,5 +410,117 @@ footer{
   footer{
     padding: 2.5%;
     font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 1280px){
+  .navigation img{
+    margin: 0;
+  }
+  .navigation{
+    max-width: 80%;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .max_size{
+    background-color: var(--wht);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+  }
+  nav a{
+    font-size: 0.5rem;
+  }
+  .header{
+    background-image: url(../img/lady.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding: 10% 0;
+  }
+  .header .header_content{
+    max-width: 80%;
+    margin: auto 50% auto 10%;
+  }
+  .about_text p{
+    width: 50%;
+  }
+  .about{
+    margin-top: 3%;
+    margin-bottom: 4%;
+    gap: 1%
+  }
+  .about_text{
+    margin-top: 5%;
+  }
+  .section_h2{
+    margin-bottom: 0.8%;
+  }
+  .about p:first-of-type{
+    margin-bottom: 3%;
+  }
+  .about h3{
+    margin-bottom: 0.5%;
+  }
+  .about_text p{
+    margin-bottom: 2%;
+  }
+  .articles{
+    max-width: 80%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+  .services{
+    padding-top: 4%;
+    padding-bottom: 2.5%;
+  }
+  .services_article{
+    margin-bottom: 2.4%;
+  }
+  .prices{
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  .prices .section_special_p{
+    margin-bottom: 3%;
+  }
+  .contact{
+    margin-right: 2%;
+    margin-top: 5%;
+  }
+  .contact img{
+    width: 100%;
+    height: auto;
+    margin-bottom: -6.5px;
+  }
+  .contact_text{
+    padding: 0;
+    padding-left: 2%;
+  }
+  .contact p{
+    margin-bottom: 3%;
+  }
+  .contact input{
+    margin: 0;
+    padding-bottom: 0.5%;
+    padding-top: 4%;
+  }
+  .contact input::placeholder{
+    font-style: italic;
+    color: rgb(99, 99, 99);
+    font-size: 0.5rem;
+  }
+  .contact_text input:nth-of-type(5){
+    border-bottom: 1px solid rgb(231, 231, 231);
+  }
+  .contact_text input:nth-of-type(2){
+    border-bottom: none;
+  }
+  .contact button{
+    margin-top: 3%;
+  }
+  footer{
+    padding: 1%;
+    font-size: 0.47rem;
   }
 }
