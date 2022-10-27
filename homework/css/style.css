@@ -47,6 +47,9 @@ ul{
   filter: invert(100%) sepia(100%) saturate(13%) hue-rotate(211deg) brightness(105%) contrast(100%);
   margin: 10px;
 }
+.main_icon{
+  filter: invert(33%) sepia(61%) saturate(1597%) hue-rotate(168deg) brightness(92%) contrast(101%);
+}
 .small_icon{
   margin: 20px;
 }
